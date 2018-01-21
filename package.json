@@ -2,6 +2,7 @@
   "name": "caf",
   "version": "0.1.0",
   "private": true,
+  "homepage":"https://karensayshi.github.io/caffeine-calculator/",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
