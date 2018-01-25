@@ -1,3 +1,5 @@
+import 'react-rangeslider/lib/index.css'
+
 .App {
   text-align: center;
 }
@@ -15,11 +17,17 @@
 }
 
 .App-title {
-  font-size: 1.5em;
+  font-size: 2.0em;
+  font-family: 'Roboto', sans-serif;
 }
 
 .App-intro {
-  font-size: large;
+  font-size: 45px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.rangeslider-horizontal .rangeslider__fill {
+  background-color: #D7DD3B !important;
 }
 
 @keyframes App-logo-spin {
