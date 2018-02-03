@@ -2,9 +2,10 @@
   "name": "caf",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://karensayshi.github.io/caffeine-calculator/",
+  "homepage": "https://karensayshi.github.io/calories-calculator/",
   "dependencies": {
     "react": "^16.2.0",
+    "react-bootstrap": "^0.32.1",
     "react-dom": "^16.2.0",
     "react-flexbox-grid": "^2.0.0",
     "react-rangeslider": "^2.2.0",
@@ -19,6 +20,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "babel-eslint": "^8.2.1",
+    "eslint": "^4.16.0",
+    "eslint-config-react": "^1.1.7",
+    "eslint-plugin-react": "^7.5.1",
     "gh-pages": "^1.1.0"
   }
 }
