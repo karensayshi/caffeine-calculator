@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import logo from './circle.png';
 import { Row, Col } from 'react-flexbox-grid';
+import Jumbotron from './Jumbotron'
 import './App.css';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
@@ -30,6 +31,7 @@ class App extends Component {
   render () {
       return (
           <div className="App">
+              <Jumbotron/>
               <Row center="xs">
                   <Col xs={12}>
                       <header className="App-header">
