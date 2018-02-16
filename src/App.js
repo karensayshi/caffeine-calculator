@@ -31,7 +31,6 @@ class App extends Component {
   render () {
       return (
           <div className="App">
-              <Jumbotron/>
               <Row center="xs">
                   <Col xs={12}>
                       <header className="App-header">
@@ -130,9 +129,10 @@ class App extends Component {
 
                       {this.state.calculation > 0 && <div className="calculation-box">
                           <br />
-                          {this.state.calculation + " calories"}
+                          <Jumbotron
+                            calculation={this.state.calculation}
+                          />
                       </div>}
-
                       <h4>What formulas are used?</h4>
                   </Col>
               </Row>

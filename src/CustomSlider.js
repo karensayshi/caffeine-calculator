@@ -11,7 +11,7 @@ export default class CustomSlider extends Component {
     }
 
     handleChange = value => {
-        this.setState({ value }, this.getValue());
+        this.setState({ value }, this.getValue);
     }
 
     render () {

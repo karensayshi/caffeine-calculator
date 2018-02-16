@@ -35,5 +35,5 @@ export default function findBMR (weight, height, age, sex, activityLevel) {
         BMR = benedict(weight, height, age, sex);
     }
 
-    return BMR * activityLevel;
+    return Math.round(BMR * activityLevel);
 }
