@@ -8,9 +8,8 @@ export default class Jumbotron extends Component{
    return (
      <div className="jumbotron-fluid">
        <div className="container">
-         <p class="lead">You need</p>
          <h1 className="display-3">{this.props.calculation} calories</h1>
-         <p class="lead">to maintain your current weight.</p>
+         <p class="lead">is what you need to maintain your current weight.</p>
          <hr className="my-4"></hr>
          <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
          <p className="lead">
