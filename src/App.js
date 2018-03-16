@@ -36,15 +36,22 @@ class App extends Component {
                       <header className="App-header">
                           <img src={logo} className="App-logo" alt="logo" />
 
-                          <h1 className="App-title">Calorie Calculator</h1>
+                          <h1 className="App-title">Calories Calculator</h1>
                       </header>
+                      <br/>
                       <p className="App-intro">
           How many calories should you have daily?
                       </p>
                       <br />
-                      <h3>What are your goals?</h3>
-                      <h3>To lose weight?</h3>
-                      <h3>Maintain weight?</h3>
+                      <br />
+                      <h3>There is no one <span class='prettify'>magic number</span> for the amount of calories everyone needs each day.</h3>
+                      <br />
+                      <br />
+                      <h3>This calculator is a tool, tailored to you, to find <span class='prettify'>your</span> unique number.</h3>
+                      <h3></h3>
+                 {/* <h3>Find out how many calories you need to maintain your current weight, and use for your favorite calorie tracking apps.</h3> */}
+                      <br />
+                      <br />
                       <br />
 
                   </Col>
@@ -55,6 +62,7 @@ class App extends Component {
                       <CustomSlider
                           name={'age'}
                           label={'How old are you?'}
+                          toolTipMessage={'Must be over 18'}
                           min={18}
                           max={100}
                           getValue={this.handleChange}
@@ -63,20 +71,23 @@ class App extends Component {
                   </Col>
               </Row>
               <br />
+              <br />
               <Row center="xs">
                   <Col xs={6}>
                       <CustomSlider
                           name="weight"
                           label={'How much do you weigh?'}
+                          toolTipMessage={'Must be over 100 lbs'}
                           min={100}
                           max={300}
                           getValue={this.handleChange}
                           unit={"pounds"}
                       />
                       <br />
-                      <br />
                   </Col>
               </Row>
+              <br />
+              <br />
               <Row center="xs">
                   <Col xs={6}>
                       <CustomSlider
@@ -91,7 +102,7 @@ class App extends Component {
                   </Col>
               </Row>
               <br />
-              <Row center="xs">
+              {/* <Row center="xs">
                   <Col xs={6}>
                       <CustomSlider
                           label={'How many pounds would you like to lose?'}
@@ -103,7 +114,7 @@ class App extends Component {
                       />
                       <br />
                   </Col>
-              </Row>
+              </Row> */}
               <br />
               <Row center="xs">
                   <Col xs={6}>
@@ -120,9 +131,12 @@ class App extends Component {
                               { value: 1.9, label: 'Heavy exercise more than twice/day, or training for a marathon/triathlon' }
                           ]}
                       />
+                      <br/>
+                      <br/>
                       <br />
 
                       <button
+                          className="btn btn-primary btn-lg"
                           onClick={this.handleFindBMR}>
                           Calculate
                       </button>
@@ -133,7 +147,6 @@ class App extends Component {
                             calculation={this.state.calculation}
                           />
                       </div>}
-                      <h4>What formulas are used?</h4>
                   </Col>
               </Row>
           </div>

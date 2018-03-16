@@ -1,5 +1,6 @@
 import 'react-rangeslider/lib/index.css'
 
+
 .App {
   text-align: center;
 }
@@ -28,6 +29,21 @@ import 'react-rangeslider/lib/index.css'
 
 .rangeslider-horizontal .rangeslider__fill {
   background-color: #D7DD3B !important;
+}
+
+.prettify {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 33px;
+  color: #D7DD3B;
+}
+
+.sliderText {
+  font-family: 'Lato', sans-serif;
+}
+
+.subText {
+  font-size: 20px;
+  font-family: 'Dancing Script', cursive;
 }
 
 @keyframes App-logo-spin {
